@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.lokesh.android.tic_tac_toe.MainActivity">
+
+    <TextView
+        android:id="@+id/timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="24dp"
+        style="@style/Animation.AppCompat.Dialog"
+        android:hint="Timeleft" />
+    <TextView
+        android:id="@+id/player_chance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="24dp"
+        style="@style/Animation.AppCompat.Dialog"
+        android:hint="player_chance" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        android:padding="24dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/_00"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="54dp"
+                android:background="@drawable/my_border"/>
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/holo_green_light"/>
+            <Button
+                android:id="@+id/_01"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="54dp"
+                android:background="@drawable/my_border"/>
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/holo_green_light"/>
+            <Button
+                android:id="@+id/_02"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="54dp"
+                android:background="@drawable/my_border"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/holo_green_light"/>
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/_10"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="54dp"
+                android:background="@drawable/my_border"/>
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/holo_green_light"/>
+            <Button
+                android:id="@+id/_11"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="54dp"
+                android:background="@drawable/my_border"/>
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/holo_green_light"/>
+            <Button
+                android:id="@+id/_12"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="54dp"
+                android:background="@drawable/my_border"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/holo_green_light"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/_20"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="54dp"
+                android:background="@drawable/my_border"/>
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/holo_green_light"/>
+            <Button
+                android:id="@+id/_21"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="54dp"
+                android:background="@drawable/my_border"/>
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/holo_green_light"/>
+            <Button
+                android:id="@+id/_22"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="54dp"
+                android:background="@drawable/my_border"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.4">
+            <TextView
+                android:id="@+id/remaining_balance"
+                android:background="@drawable/my_border"
+                android:text="100"
+                android:gravity="center"
+                android:padding="5dp"
+                android:textSize="32dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/score"
+                android:background="@drawable/my_border"
+                android:gravity="center"
+                android:text="0"
+                android:textSize="32dp"
+                android:layout_width="0dp"
+                android:padding="5dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent" />
+            <Button
+                android:id="@+id/back"
+                android:text="@string/backSpace"
+                android:background="@drawable/my_border"
+                android:gravity="center"
+                android:padding="5dp"
+                android:textSize="32dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="54dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.4"
+            android:paddingTop="5dp">
+            <Button
+                android:id="@+id/enter_1"
+                android:text="1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="54dp" />
+            <Button
+                android:id="@+id/enter_2"
+                android:text="2"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="54dp" />
+            <Button
+                android:id="@+id/enter_3"
+                android:text="3"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="54dp" />
+            <Button
+                android:id="@+id/enter_4"
+                android:text="4"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="54dp" />
+            <Button
+                android:id="@+id/enter_5"
+                android:text="5"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="54dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.4">
+            <Button
+                android:id="@+id/enter_6"
+                android:text="6"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="54dp" />
+            <Button
+                android:id="@+id/enter_7"
+                android:text="7"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="54dp" />
+            <Button
+                android:id="@+id/enter_8"
+                android:text="8"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="54dp" />
+            <Button
+                android:id="@+id/enter_9"
+                android:text="9"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="54dp" />
+            <Button
+                android:id="@+id/enter_0"
+                android:text="0"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="54dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/timer_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="timer"
+        android:layout_gravity="center"
+        />
+</LinearLayout>
